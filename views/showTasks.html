@@ -1,0 +1,38 @@
+<html>
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Welcome
+    </h1>
+    </br>
+    <h3>The available tasks are:
+        <table>
+            <tr>
+                <td>Task Name</td>
+                <td>Due Date</td>
+                <td>Task Desc</td>
+                
+            </tr>
+            
+            <% for ( var i =0; i < taskDb.length;i++){ %>
+
+                <tr>
+                    <td>
+                        <%= taskDb[i].taskId %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].dueDate %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].taskDesc %>
+                    </td>
+                </tr>
+                <% }%>
+    </h3>
+</body>
+</html>
